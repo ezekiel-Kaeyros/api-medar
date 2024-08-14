@@ -102,7 +102,7 @@ function(id, token) {
 
   # Si le décodage échoue, retourner une erreur 500
   if (is.null(token_json_data)) {
-    return("Error 500 - Internal Server Error")
+    return("Error 500 - Internal Server Error 1")
   }
 
   # Validation du token et des droits d'accès
@@ -150,6 +150,6 @@ function(id, token) {
     # Retourner les catégories correspondantes
     return(categories[knn_indices[1], c("Ebene 1","Ebene 2", "Ebene 3")])
   } else {
-    return("Error 500 - Internal Server Error")
+    return("Error 500 - Internal Server Error 2")
   }
 }
